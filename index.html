@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    .block{background-color: #F0F1EC;}
+    .red{background-color: #E72F24;}
+    .purple{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+    .yellow{background-color: #F9D01E;}
+    .grey{background-color: #232629;}
+
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    #grid{
+      display: grid;
+      height: 748px;
+      width: 748px;
+      background-color: black;
+      grid-template: 414px 130px 155px 20px / 320px 198px 153px 50px;
+      /* grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px; */
+      gap: 9px;
+    }
+
+    .pink1{grid-column: span 3;}
+    .pink2, .pink3{grid-row: span 2;}
+    .pink3{grid-column: span 2;}
+    .pink4{grid-row: span 2;}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="grid">
+      <div class="block red"></div>
+      <div class="block pink1"></div>
+      <div class="block pink2"></div>
+      <div class="block pink3"></div>
+      <div class="block purple"></div>
+      <div class="block pink4"></div>
+      <div class="block pink5"></div>
+      <div class="block yellow"></div>
+      <div class="block grey"></div>
+    </div>
+  </div>
+</body>
+
+</html>
